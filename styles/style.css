@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #191919;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: auto 40px;
+}
+
+nav {
+    margin: auto 0;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.link--selected {
+    font-weight: 700;
+}
+
+.link:hover {
+    font-weight: 700;
+    transition: font-weight 1s;
+}
