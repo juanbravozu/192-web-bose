@@ -37,6 +37,7 @@ nav {
 
 .calltoaction {
     display: flex;
+    padding-top: 185px;
     flex-direction: column;
     height: 590px;
     background-size: cover;
@@ -49,26 +50,64 @@ nav {
 }
 
 .text_title {
-    text-align: center;
-    font-size: 48px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .text_body {
     max-width: 615px;
+    margin: 0 auto;
+}
+
+.text_title--big {
+    text-align: center;
+    font-size: 48px;
+}
+
+.text_body--big {
     text-align: center;
     font-size: 24px;
-    margin: 0 auto;
 }
 
 .button {
     height: 52px;
     width: fit-content;
-    padding: 0 20px;
+    padding: 0 50px;
     box-sizing: content-box;
     border-radius: 26px;
     border: none;
     background-color: white;
     font-size: 20px;
-    margin: 0 auto;
+    margin: 70px auto;
+}
+
+.product {
+    background-color: #191919;
+    display: flex;
+    padding: 30px 100px;
+}
+
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product_container {
+    margin: auto 0;
+    height: fit-content;
+}
+
+.text_body--medium {
+    max-width: 536px;
+    font-size: 18px;
+}
+
+.text_title--medium {
+    line-height: 40px;
+    max-width: 535px;
+    font-size: 36px;
+}
+
+.button-product {
+    margin: 50px 0;
 }
