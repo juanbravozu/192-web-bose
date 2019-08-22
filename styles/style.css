@@ -1,11 +1,13 @@
 * {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     background-color: #191919;
     padding: 20px 0;
@@ -31,5 +33,42 @@ nav {
 
 .link:hover {
     font-weight: 700;
-    transition: font-weight 1s;
+}
+
+.calltoaction {
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    background-size: cover;
+    background-image: url(/styles/images/fondo1.png);
+}
+
+.text {
+    color: white;
+    position: relative;
+}
+
+.text_title {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text_body {
+    max-width: 615px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.button {
+    height: 52px;
+    width: fit-content;
+    padding: 0 20px;
+    box-sizing: content-box;
+    border-radius: 26px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0 auto;
 }
