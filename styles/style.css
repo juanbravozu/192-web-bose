@@ -50,21 +50,21 @@ nav {
     position: relative;
 }
 
-.text_title {
+.text__title {
     font-family: 'Open Sans', sans-serif;
 }
 
-.text_body {
+.text__body {
     max-width: 615px;
     margin: 0 auto;
 }
 
-.text_title--big {
+.text__title--big {
     text-align: center;
     font-size: 48px;
 }
 
-.text_body--big {
+.text__body--big {
     text-align: center;
     font-size: 24px;
 }
@@ -100,11 +100,11 @@ nav {
     max-width: 536px;
 }
 
-.text_body--medium {
+.text__body--medium {
     font-size: 18px;
 }
 
-.text_title--medium {
+.text__title--medium {
     line-height: 40px;
     font-size: 36px;
     margin-bottom: 25px;
@@ -134,7 +134,7 @@ nav {
     text-align: center;
 }
 
-.text_title--small {
+.text__title--small {
     font-size: 24px;
     margin: 20px 0;
 }
@@ -150,10 +150,27 @@ nav {
 .ad {
     width: 100%;
     height: 390px;
-    background-color: black;
+    background-image: url('https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/noise_cancelling_headphones_700/images/noise_cancelling_headphones_700_SC_05.psd/jcr:content/renditions/cq5dam.web.1920.1920.jpeg');
+    background-position: 0 -300%;
+    padding-left: 35%;
+    padding-top: 10%;
 }
 
-.galery {
+.ad__title {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 40px;
+    font-size: 36px;
+}
+
+.ad__body {
+    margin: 0 ;
+}
+
+.ad__button {
+    margin: 25px 25%;
+}
+
+.imageGallery {
     background-color: #191919;
     display: flex;
     flex-direction: column;
@@ -164,30 +181,99 @@ nav {
     padding-top: 50px;
 }
 
-.galery_Container {
+.imageGallery:nth-child(2) {
+    align-content: flex-start;
+}
+.gallery {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
-.galery_image {
-    margin: 10px 100px;
-    width: 80%;
+.gallery__button {
+    position: absolute;
+    left: 0;
 }
 
-.text_title--centered {
+.gallery__img {
+    height: 100%;
+    margin: 10px 0;
+}
+
+.gallery__container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+.gallery__tape {
+    overflow: hidden;
+    display: flex;
+    height: 338px;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.gallery__tape--inactive {
+    transition: none;
+}
+
+.gallery__button {
+    position: relative;
+    z-index: 10;
+}
+
+.text__title--centered {
     text-align: center;
     margin: 0;
 }
 
-.specifications {
-    height: 540px;
-    overflow: hidden;
+.spec {
+    color: #191919;
+    padding: 80px;
 }
 
-.spec {
+.spec__row {
+    display: flex;
+    margin: 70px 0;
+}
+
+.spec__block {
+    margin: 0 auto;
+    max-width: 40%;
     position: relative;
-    left: -40px;
+}
+
+.spec__block--left {
+    margin-left: 60px;
+}
+
+.spec__block--right {
+    margin-right: 60px;
+}
+
+.spec__items {
+    display: flex;
+    width: fit-content;
+}
+
+.spec__img {
+    margin-right: 15px;
+}
+
+.spec__title {
+    box-sizing: content-box;
+    font-weight: 400;
+    font-size: 20px;
+    margin: auto;
+}
+
+.spec__text {
+    margin-top: 25px;
 }
 
 .interactionSettings {
@@ -210,20 +296,41 @@ nav {
 .model {
     background-color: white;
     height: 330px;
+    padding: 0 20%;
     display: flex;
-    justify-content: center;
+}
+
+.inter__colorSelector {
+    position: relative;
+    top: -180px;
+    left: -200px;
+    display: flex;
+    flex-direction: row;
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+.inter__color {
+    height: 45px;
+    position: relative;
+    margin: 0 -7px;
+}
+
+.inter__color--odd {
+    top: 23px;
 }
 
 .productModel {
     height: 496px;
     position: relative;
-    top: -150px;
+    top: -200px;
 }
 
 .newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .text_body--centered {

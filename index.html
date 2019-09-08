@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <title>Bose</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="styles/images/logo.png" alt="Bose logo"></a>
+        <a href="#" class="logo"><img src="./styles/images/logo.png" alt="Bose logo"></a>
         <nav>
             <a href="#" class="link link--selected">Inicio</a>
             <a href="#" class="link">Tienda</a>
@@ -22,8 +22,8 @@
 
     <section class="calltoaction">
         <div class="text">
-            <h1 class="text_title text_title--big">TECNOLOGÍA DE VANGUARDIA</h1>
-            <p class="text_body text_body--big">Los auriculares anti-ruido implementan tecnología de punta para que nada se interponga entre la música y tu</p>
+            <h1 class="text__title text__title--big">TECNOLOGÍA DE VANGUARDIA</h1>
+            <p class="text__body text__body--big">Los auriculares anti-ruido implementan tecnología de punta para que nada se interponga entre la música y tu</p>
         </div>
 
         <input type="submit" value="Ver Productos" class="button">
@@ -32,86 +32,160 @@
     <section class="product">
         <div class="verticalContainer">
             <div class="text">
-                    <h1 class="text_title text_title--medium">Bose Noise Cancelling Headphones 700</h1>
-                    <p class="text_body text_body--medium">Los auriculares Bose Noise Cancelling Headphones 700 poseen todas las funciones que esperas, y otras que nunca imaginaste. Cuentan con asistente de voz y el más poderoso micrófono de voz. Además, está el audio AR, una tecnología que permite realizar nuevas experiencias auditivas nunca antes vistas.</p>
+                    <h1 class="text__title text__title--medium">Bose Noise Cancelling Headphones 700</h1>
+                    <p class="text__body text_body--medium">Los auriculares Bose Noise Cancelling Headphones 700 poseen todas las funciones que esperas, y otras que nunca imaginaste. Cuentan con asistente de voz y el más poderoso micrófono de voz. Además, está el audio AR, una tecnología que permite realizar nuevas experiencias auditivas nunca antes vistas.</p>
             </div>
 
             <input type="submit" class="button button--medium" value="Ir a la tienda">
         </div>
         
 
-        <img src="/styles/images/headphones.png" alt="" class="productImage">
+        <img src="./styles/images/headphones.png" alt="" class="productImage">
     </section>
 
     <section class="characteristics">
         <div class="feature">
-            <img src="/styles/images/featureIcon.png" alt="" class="featureIcon">
+            <img src="./styles/images/featureIcon.png" alt="" class="featureIcon">
 
             <div class="text text--dark">
-                <h1 class="text_title text_title--small">CALIDAD</h1>
-                <p class="text_body text_body--medium">Todos los productos aseguran la mayor calidad de audio en el mercado, ya sea para uso diario o profesional.</p>
+                <h1 class="text__title text__title--small">CALIDAD</h1>
+                <p class="text__body text__body--medium">Todos los productos aseguran la mayor calidad de audio en el mercado, ya sea para uso diario o profesional.</p>
             </div>
         </div>
 
         <div class="feature">
-            <img src="/styles/images/featureIcon.png" alt="" class="featureIcon">
+            <img src="./styles/images/featureIcon.png" alt="" class="featureIcon">
 
             <div class="text text--dark">
-                <h1 class="text_title text_title--small">PERSONALIZACIÓN</h1>
-                <p class="text_body text_body--medium">Tienes la posibilidad de escoger el color que desees para tus auriculares.</p>
+                <h1 class="text__title text__title--small">PERSONALIZACIÓN</h1>
+                <p class="text__body text__body--medium">Tienes la posibilidad de escoger el color que desees para tus auriculares.</p>
+               
             </div>
         </div>
 
         <div class="feature">
-            <img src="/styles/images/featureIcon.png" alt="" class="featureIcon">
+            <img src="./styles/images/featureIcon.png" alt="" class="featureIcon">
 
             <div class="text text--dark">
-                <h1 class="text_title text_title--small">DURABILIDAD</h1>
-                <p class="text_body text_body--medium">Cada producto está fabricado con los mejores materiales para asegurar unos auriculares duraderos.</p>
+                <h1 class="text__title text__title--small">DURABILIDAD</h1>
+                <p class="text__body text__body--medium">Cada producto está fabricado con los mejores materiales para asegurar unos auriculares duraderos.</p>
             </div>
         </div>
     </section>
-
+        
     <section class="ad">
-         <img src="/styles/images/ad.png" alt="">
-    </section>
-
-    <section class="galery">
-        <h1 class="text_title text_title--medium text_title--centered">GALERÍA DE PRODUCTOS</h1>
-        <div class="galery_Container">
-            <img src="/styles/images/left.png" alt="">
-            <img src="/styles/images/galery.png" alt="" class="galery_image">
-            <img src="/styles/images/right.png" alt="">
+        <div>
+            <h1 class="text ad__title">Audífonos inalambricos on-ear Bose</h1>
+            <p class="text text__body ad__body">Ligero para tus oídos. Sin cables molestos.</p>
+            <input type="submit" class="button button--medium ad__button" value="Comprar ahora $150">
         </div>
-        <p class="text_body text_body--big">Bose on-ear wireless headphones</p>
     </section>
 
-    <section class="specifications">
-        <img src="/styles/images/specifications.png" alt="" class="spec">
+    <section class="imageGallery">
+        <h1 class="text__title text__title--medium text__title--centered">GALERÍA DE PRODUCTOS</h1>
+        <div class="gallery__button">
+            <input type="image" src="./styles/images/left.png" class="gallery__button prev">
+            <input type="image" src="./styles/images/right.png" class="gallery__button next">
+        </div>
+        <div class="gallery">
+
+            <div class="gallery__tape">
+                <div class="gallery__container">
+                    <img src="./styles/images/galery.png" alt="" class="gallery__img">
+                </div>
+
+                <div class="gallery__container">
+                    <img src="./styles/images/galery1.png" alt="" class="gallery__img">
+                </div>
+
+                <div class="gallery__container">
+                    <img src="./styles/images/galery2.png" alt="" class="gallery__img">
+                </div>
+
+                <div class="gallery__container">
+                    <img src="./styles/images/galery3.png" alt="" class="gallery__img">
+                </div>
+
+                <div class="gallery__container">
+                    <img src="./styles/images/galery4.png" alt="" class="gallery__img">
+                </div>             
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="spec">
+        <div class="spec__row">
+            <div class="spec__block spec__block--left">
+                <div class="spec__items">
+                    <img src="./styles/images/bluetooth.svg" class="spec__img" alt="">
+                    <h2 class="spec__title">CONEXIÓN BLUETOOTH</h2>
+                </div>
+                <p class="spec__text">Conexión vía bluetooth entre dispositivos rápida y sencilla, permitiendo el uso de comandos de voz.</p>
+            </div>
+
+            <div class="spec__block spec__block--right">
+                <div class="spec__items">
+                    <img src="./styles/images/battery.svg" class="spec__img" alt="">
+                    <h2 class="spec__title">BATERÍA DE LARGA DURACIÓN</h2>
+                </div>
+                <p class="spec__text">La batería dura hasta 24 horas de uso y recupera 2 horas por cada 15 minutos de carga.</p>
+            </div>
+    
+        </div>
+
+        <div class="spec__row">
+            <div class="spec__block spec__block--left">
+                <div class="spec__items">
+                    <img src="./styles/images/umbrella.svg" class="spec__img" alt="">
+                    <h2 class="spec__title">RESISTENTE AL AGUA</h2>
+                </div>
+                <p class="spec__text">Resiste perfectamente la exposición al agua o sudor.</p>
+            </div>
+
+            <div class="spec__block spec__block--right">
+                <div class="spec__items">
+                    <img src="./styles/images/notification.svg" class="spec__img" alt="">
+                    <h2 class="spec__title">VIBRACIÓN PARA LLAMADAS ENTRANTES</h2>
+                </div>
+                <p class="spec__text">Las alertas hápticas son una forma discreta de notificarte cuando haya una llamada entrante</p>
+            </div>
+        </div>
     </section>
 
     <section class="interaction">
         <div class="interactionSettings">
-            <h1 class="text_title text_title--medium text_title--centered">EXPLORA NUESTROS PRODUCTOS</h1>
-            <input type="submit" class="button button--medium button--dark" value="Explora otro producto">
+            <h1 class="text__title text__title--medium text__title--centered">PRUEBA OTROS COLORES</h1>
         </div>
 
         <div class="model">
-            <img src="/styles/images/model.png" alt="" class="productModel">
+            <img src="./styles/images/modelWhite.png" alt="" class="productModel">
+            <div class="inter__colorSelector">
+                <input type="image" class="inter__color inter__color--odd" src="./styles/images/colorRed.png">
+                <input type="image" class="inter__color" src="./styles/images/colorPink.png">
+                <input type="image" class="inter__color inter__color--odd" src="./styles/images/colorPurple.png">
+                <input type="image" class="inter__color" src="./styles/images/colorDarkBlue.png">
+                <input type="image" class="inter__color inter__color--odd" src="./styles/images/colorBlue.png">
+                <input type="image" class="inter__color" src="./styles/images/colorAquamarine.png">
+                <input type="image" class="inter__color inter__color--odd" src="./styles/images/colorGreen.png">
+                <input type="image" class="inter__color" src="./styles/images/colorLime.png">
+                <input type="image" class="inter__color inter__color--odd" src="./styles/images/colorYellow.png">
+                <input type="image" class="inter__color" src="./styles/images/colorOrange.png">
+            </div>
         </div>
     </section>
 
     <section class="newsletter">
         <div class="text text--dark">
-            <h1 class="text_title text_title--small text_title--centered">ENTÉRATE DE DESCUENTOS</h1>
-            <p class="text_body text_body--medium text_body--centered">Sé el primero en saber sobre los nuevos productos e increíbles ofertas:</p>
+            <h1 class="text__title text__title--small text__title--centered">ENTÉRATE DE DESCUENTOS</h1>
+            <p class="text__body text__body--medium text__body--centered">Sé el primero en saber sobre los nuevos productos e increíbles ofertas:</p>
         </div>
         <input type="text" placeholder="Correo electrónico" class="inputText">
         <input type="submit" class="button button--black">
     </section>
 
     <footer>
-        <img src="/styles/images/logo.png" alt="" class="logo logo--footer">
+        <img src="./styles/images/logo.png" alt="" class="logo logo--footer">
         <div class="vertical"></div>
         <div class="links">
             <a href="#" class="link ">Contáctanos</a>
@@ -119,5 +193,7 @@
             <a href="#" class="link ">Tiendas físicas</a>
         </div>
     </footer>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
