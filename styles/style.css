@@ -41,8 +41,11 @@ nav {
     padding-top: 185px;
     flex-direction: column;
     height: 590px;
-    background-size: cover;
     background-image: url(/styles/images/fondo1.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 .text {
@@ -149,9 +152,9 @@ nav {
 
 .ad {
     width: 100%;
-    height: 390px;
+    height: 300px;
     background-image: url('https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/noise_cancelling_headphones_700/images/noise_cancelling_headphones_700_SC_05.psd/jcr:content/renditions/cq5dam.web.1920.1920.jpeg');
-    background-position: 0 -300%;
+    background-position: 0 -80%;
     padding-left: 35%;
     padding-top: 10%;
 }
@@ -379,4 +382,83 @@ footer {
     margin: 40px 20px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 720px) {
+    .characteristics {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .product {
+        flex-direction: column-reverse;
+    }
+
+    .spec__row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .spec__block {
+        max-width: 100%;
+        margin: 50px 0;
+    }
+
+    .spec__block {
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    .text__title--medium {
+        font-size: 24px;
+    }
+
+    .model {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .inter__colorSelector {
+        transform: rotate(0deg);
+        left: 0;
+        top: -120px;
+        transform: scale(0.85);
+
+    }
+
+    .productModel {
+        top: -50px;
+    }
+
+    .newsletter {
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputText {
+        width: 70%;
+    }
+
+    .text--dark {
+        width: 70%;
+    }
+
+    .text__body--medium {
+        font-size: 15px;
+    }
+
+    .text__body--big {
+        font-size: 18px;
+        max-width: 80%;
+    }
+
+    .text__title--big {
+        font-size: 28px;
+    }
 }
