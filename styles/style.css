@@ -22,6 +22,10 @@ nav {
     margin: auto 0;
 }
 
+.menu {
+    opacity: 0;
+}
+
 .link {
     color: white;
     text-decoration: none;
@@ -180,17 +184,17 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 30px;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .imageGallery:nth-child(2) {
     align-content: flex-start;
 }
+
 .gallery {
+    justify-self: flex-start;
+    align-self: flex-start;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px 0;
 }
 
@@ -214,10 +218,8 @@ nav {
 }
 
 .gallery__tape {
-    overflow: hidden;
     display: flex;
     height: 338px;
-    align-items: flex-start;
     transition: transform .3s ease-in-out;
 }
 
@@ -384,7 +386,16 @@ footer {
     flex-direction: column;
 }
 
+input:focus {
+    outline: none;
+}
+
 @media screen and (max-width: 720px) {
+
+    .calltoaction {
+        background-position: -500px 0;
+    }
+
     .characteristics {
         flex-direction: column;
         height: auto;
@@ -460,5 +471,25 @@ footer {
 
     .text__title--big {
         font-size: 28px;
+    }
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    nav {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .menu {
+        opacity: 1;
+    }
+
+    .logo {
+        margin: 0 auto;
     }
 }
