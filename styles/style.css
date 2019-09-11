@@ -11,7 +11,7 @@ header {
     display: flex;
     background-color: #191919;
     padding: 20px 0;
-    z-index: 10;
+    z-index: 11;
 }
 
 .logo {
@@ -87,6 +87,7 @@ nav {
     font-size: 20px;
     margin: 70px auto;
     margin-bottom: 0;
+    cursor: pointer;
 }
 
 .product {
@@ -184,14 +185,12 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 50px 0;
-}
-
-.imageGallery:nth-child(2) {
-    align-content: flex-start;
+    padding-top: 50px;
 }
 
 .gallery {
+    position: relative;
+    top: -8vw;
     justify-self: flex-start;
     align-self: flex-start;
     display: flex;
@@ -199,13 +198,24 @@ nav {
 }
 
 .gallery__button {
-    position: absolute;
-    left: 0;
+    width: 98vw;
+    align-self: flex-start;
+    position: relative;
+    top: 12vw;
+    padding: 2vw;
+    z-index: 10;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
 }
 
 .gallery__img {
     height: 100%;
-    margin: 10px 0;
 }
 
 .gallery__container {
@@ -219,17 +229,13 @@ nav {
 
 .gallery__tape {
     display: flex;
-    height: 338px;
+    height: 25vw;
     transition: transform .3s ease-in-out;
+    transform: translate(-100vw, 0);
 }
 
 .gallery__tape--inactive {
     transition: none;
-}
-
-.gallery__button {
-    position: relative;
-    z-index: 10;
 }
 
 .text__title--centered {
@@ -491,5 +497,13 @@ input:focus {
 
     .logo {
         margin: 0 auto;
+    }
+
+    .prev {
+        height: 50px;
+    }
+
+    .next {
+        height: 50px;
     }
 }
