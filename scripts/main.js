@@ -9,7 +9,7 @@ function handleLoad() {
 
         function handleColorClick() {
 
-            productImage.setAttribute('src', './styles/images/model'+index+'.png');
+            productImage.setAttribute('src', './images/model'+index+'.png');
            
         }
 
@@ -91,6 +91,17 @@ function handleLoad() {
 
     nextButton.addEventListener('click', handleGalleryClick);
     prevButton.addEventListener('click', handleGalleryClick);
+
+    // Responsive menu display ------------------------------------
+
+    var menuBtn = document.querySelector('.header__btn');
+    var nav = document.querySelector('nav');
+
+    function handleMenuClick() {
+        nav.classList.toggle('nav--active');
+    }
+
+    menuBtn.addEventListener('click', handleMenuClick);
 }
 
 window.addEventListener('load', handleLoad);
