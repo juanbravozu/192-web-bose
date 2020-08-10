@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     width: 100%;
     position: sticky;
@@ -43,20 +47,18 @@ nav {
 }
 
 .calltoaction {
+    position: relative;
     display: flex;
-    padding-top: 185px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 590px;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    overflow-y: hidden;
 }
 
 .bgimage {
-    height: 591px;
     position: absolute;
-    right: 0;
-    top: 66px;
+    width: 100%;
 }
 
 .text {
